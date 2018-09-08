@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>me.saerkin.changebot</groupId>
+  <artifactId>changebot-trades</artifactId>
+  <version>0.1</version>
+  <packaging>jar</packaging>
+
+  <description>
+    Enhanced trade log for Telegram Change Bot (BTC Banker, etc)
+  </description>
+
+  <build>
+    <finalName>changebot-trades-${pom.version}</finalName>
+    <outputDirectory>target/main/classes</outputDirectory>
+    <testOutputDirectory>target/test</testOutputDirectory>
+
+    <plugins>
+      <!-- Javac -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
+        <configuration>
+		  <compilerVersion>1.8</compilerVersion>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+
+      <!-- Jar -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.0</version>
+        <configuration>
+          <classesDirectory>target/main/classes</classesDirectory>
+          <outputDirectory>target/main/artifacts</outputDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
