@@ -1,4 +1,5 @@
 .idea/*.xml
+.idea/libraries/
 *.iml
 target/
 test/
