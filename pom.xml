@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>me.saerkin.changebot</groupId>
-  <artifactId>changebot-trades</artifactId>
+  <artifactId>changebot-tradelog</artifactId>
   <version>0.1</version>
   <packaging>jar</packaging>
 
@@ -14,7 +14,8 @@
   </description>
 
   <build>
-    <finalName>changebot-trades-${pom.version}</finalName>
+    <finalName>changebot-tradelog-${pom.version}</finalName>
+    <sourceDirectory>src/main/java</sourceDirectory>
     <outputDirectory>target/main/classes</outputDirectory>
     <testOutputDirectory>target/test</testOutputDirectory>
 
