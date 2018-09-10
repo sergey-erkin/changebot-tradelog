@@ -10,7 +10,7 @@ import static java.nio.file.Files.isRegularFile;
 /**
  * Accept only not hidden files
  */
-final class AcceptVisibleFileFilter implements DirectoryStream.Filter<Path>
+final class AcceptOnlyVisibleFilesFilter implements DirectoryStream.Filter<Path>
 {
   @Override
   public boolean accept(Path path) throws IOException

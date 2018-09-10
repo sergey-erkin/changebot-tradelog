@@ -38,6 +38,6 @@ final class TradeLogFolder
 
   private DirectoryStream<Path> selectVisibleFiles() throws IOException
   {
-    return Files.newDirectoryStream(path, new AcceptVisibleFileFilter());
+    return Files.newDirectoryStream(path, new AcceptOnlyVisibleFilesFilter());
   }
 }
