@@ -29,7 +29,7 @@ final class TradeLogFolder
           total++;
         }
         catch (UnknownFileFormatException e) {
-          System.out.println(child + " skipped due it's not a trade log: " + e.getMessage());
+          System.out.println(child + " skipped: " + e.getMessage());
         }
       }
     }
